@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#13345f">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/background_card"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="#0D47A1"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="380dp"
+            android:text=" @ibrazqrj"
+            android:textColor="#aaaaaa"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/memoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/ibraa" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/foreground_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:background="#FFFFFF"
+        android:layout_margin="16dp">
+        <!-- Inhalt der vorderen Karte -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Titel -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TO DO APP"
+                android:textColor="#13345f"
+                android:textSize="68sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="track your tasks."
+                android:textColor="#13345f"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+            <!-- Start-Button -->
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:text="LOGIN"
+                android:backgroundTint="#408000"
+                android:textColor="#ffff"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:id="@+id/bottom_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-150dp"
+        android:src="@drawable/firstimg" />
+
+    <ScrollView
+        android:id="@+id/containersw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/task_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</RelativeLayout>
