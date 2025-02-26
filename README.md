@@ -1,4 +1,4 @@
-# BlazorToDoApp
+# Blazor To do App
 
 Eine **To-Do-Anwendung**, die mit **Blazor WebAssembly (WASM)** entwickelt wurde. Die App ermöglicht es, Aufgaben zu erstellen, zu bearbeiten, zu löschen und als erledigt zu markieren. Das Frontend kommuniziert mit einer **RESTful API** im Backend und nutzt **Azure AD für die Authentifizierung**.
 
