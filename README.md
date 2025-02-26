@@ -1,4 +1,4 @@
-#Android To do App
+# Android To do App
 
 Eine einfache **ToDo-Listen-App**, die eine RESTful API verwendet, um Aufgaben anzuzeigen, hinzuzufügen und zu löschen. Die App ist in **Java** geschrieben und verwendet **Retrofit** für die API-Kommunikation sowie **RecyclerView** für die Anzeige der Aufgaben.
 
